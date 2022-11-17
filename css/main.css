@@ -631,6 +631,7 @@ body {
   .section__hero {
     background-image: url(../../images/hero-bg-desctop.png);
     background-position: center bottom 50px;
+    overflow: hidden;
   }
 }
 

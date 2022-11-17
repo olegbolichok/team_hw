@@ -98,9 +98,7 @@
                         <nav class="site-nav">
                             <ul class="site-nav__list">
                                 <li class="site-nav__item">
-                                    <a
-                                        href="./index.html#programm"
-                                        class="site-nav__link"
+                                    <a href="#programm" class="site-nav__link"
                                         >Программа обучения</a
                                     >
                                 </li>
@@ -315,7 +313,7 @@
                 </div>
             </section>
             <!-- PROGRAMM -->
-            <section class="section section__programm #programm">
+            <section class="section section__programm" id="programm">
                 <div class="programm__line"></div>
                 <div class="container programm">
                     <h2 class="programm__title">Наша программа</h2>
@@ -511,7 +509,7 @@
                 </div>
             </section>
             <!-- REASONS -->
-            <section class="section section__reasons #about">
+            <section class="section section__reasons" id="about">
                 <div class="reasons">
                     <h2 class="reasons__title">Почему нас выбирают</h2>
                     <div class="reasons__card">
@@ -544,7 +542,14 @@
                     <div class="teacher__card">
                         <h2 class="teacher__title">Преподаватель</h2>
                         <img
-                            src="./images/teacher.jpg"
+                            srcset="
+                                ./images/teacher-243.jpg   243w,
+                                ./images/teacher-486.jpg   486w,
+                                ./images/teacher-729.jpg   729w,
+                                ./images/teacher-1060.jpg 1060w
+                            "
+                            sizes="(min-width: 1360px) 530px, 243px"
+                            src="./images/teacher-243.jpg"
                             alt="Фото преподавателя"
                             class="teacher__foto"
                         />
@@ -590,7 +595,7 @@
                 </div>
             </section>
             <!-- GUARANTIES -->
-            <section class="section section__guaranties #variants">
+            <section class="section section__guaranties" id="variants">
                 <div class="container guaranties">
                     <h2 class="guaranties__title">Мы гарантируем</h2>
                     <div class="guaranties__card">
@@ -629,7 +634,13 @@
                     <div class="reviews__card">
                         <div class="reviews__card--left">
                             <img
-                                src="./images/reviews-foto-main.jpg"
+                                srcset="
+                                    ./images/reviews-foto-150.jpg 150w,
+                                    ./images/reviews-foto-300.jpg 300w,
+                                    ./images/reviews-foto-450.jpg 450w
+                                "
+                                sizes="(min-width:768px) 150px, 90px"
+                                src="./images/reviews-foto-150.jpg"
                                 alt="Фото выпускника"
                                 class="reviews__foto--main"
                             />
@@ -680,49 +691,91 @@
                         <ul class="reviews__list">
                             <li class="reviews__item">
                                 <img
-                                    src="./images/reviews-foto-1.jpg"
+                                    srcset="
+                                        ./images/reviews-foto1-54.jpg   54w,
+                                        ./images/reviews-foto1-108.jpg 108w,
+                                        ./images/reviews-foto1-162.jpg 162w
+                                    "
+                                    sizes="54px"
+                                    src="./images/reviews-foto1-54.jpg"
                                     alt="Фото выпускника"
                                     class="reviews__foto--secondary"
                                 />
                             </li>
                             <li class="reviews__item">
                                 <img
-                                    src="./images/reviews-foto-2.jpg"
+                                    srcset="
+                                        ./images/reviews-foto2-54.jpg   54w,
+                                        ./images/reviews-foto2-108.jpg 108w,
+                                        ./images/reviews-foto2-162.jpg 162w
+                                    "
+                                    sizes="54px"
+                                    src="./images/reviews-foto2-54.jpg"
                                     alt="Фото выпускника"
                                     class="reviews__foto--secondary"
                                 />
                             </li>
                             <li class="reviews__item">
                                 <img
-                                    src="./images/reviews-foto-3.jpg"
+                                    srcset="
+                                        ./images/reviews-foto3-54.jpg   54w,
+                                        ./images/reviews-foto3-108.jpg 108w,
+                                        ./images/reviews-foto3-162.jpg 162w
+                                    "
+                                    sizes="54px"
+                                    src="./images/reviews-foto3-54.jpg"
                                     alt="Фото выпускника"
                                     class="reviews__foto--secondary"
                                 />
                             </li>
                             <li class="reviews__item">
                                 <img
-                                    src="./images/reviews-foto-4.jpg"
+                                    srcset="
+                                        ./images/reviews-foto4-54.jpg   54w,
+                                        ./images/reviews-foto4-108.jpg 108w,
+                                        ./images/reviews-foto4-162.jpg 162w
+                                    "
+                                    sizes="54px"
+                                    src="./images/reviews-foto4-54.jpg"
                                     alt="Фото выпускника"
                                     class="reviews__foto--secondary"
                                 />
                             </li>
                             <li class="reviews__item">
                                 <img
-                                    src="./images/reviews-foto-5.jpg"
+                                    srcset="
+                                        ./images/reviews-foto5-54.jpg   54w,
+                                        ./images/reviews-foto5-108.jpg 108w,
+                                        ./images/reviews-foto5-162.jpg 162w
+                                    "
+                                    sizes="54px"
+                                    src="./images/reviews-foto5-54.jpg"
                                     alt="Фото выпускника"
                                     class="reviews__foto--secondary"
                                 />
                             </li>
                             <li class="reviews__item">
                                 <img
-                                    src="./images/reviews-foto-6.jpg"
+                                    srcset="
+                                        ./images/reviews-foto6-54.jpg   54w,
+                                        ./images/reviews-foto6-108.jpg 108w,
+                                        ./images/reviews-foto6-162.jpg 162w
+                                    "
+                                    sizes="54px"
+                                    src="./images/reviews-foto6-54.jpg"
                                     alt="Фото выпускника"
                                     class="reviews__foto--secondary"
                                 />
                             </li>
                             <li class="reviews__item">
                                 <img
-                                    src="./images/reviews-foto-7.jpg"
+                                    srcset="
+                                        ./images/reviews-foto7-54.jpg   54w,
+                                        ./images/reviews-foto7-108.jpg 108w,
+                                        ./images/reviews-foto7-162.jpg 162w
+                                    "
+                                    sizes="54px"
+                                    src="./images/reviews-foto7-54.jpg"
                                     alt="Фото выпускника"
                                     class="reviews__foto--secondary"
                                 />
@@ -786,7 +839,7 @@
             </section>
         </main>
         <!-- FOOTER -->
-        <footer class="section #contacts">
+        <footer class="section" id="contacts">
             <div class="section section__footer">
                 <div class="container footer">
                     <a href="http://" class="logo"
