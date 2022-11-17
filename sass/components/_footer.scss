@@ -1,0 +1,91 @@
+.section__footer {
+    background-color: $bcg-white-color;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 21px 20px;
+    @media screen and (min-width: 768px) {
+        padding: 40px 20px;
+        flex-direction: row;
+    }
+    @media screen and (min-width: 1360px) {
+        padding: 52px 23px 52px 103px;
+    }
+}
+.phone-number {
+    position: relative;
+    font-style: normal;
+    margin-top: 21px;
+    margin-bottom: 31px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -30px;
+        background-image: url(../../images/phone.svg);
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        @media screen and (min-width: 767px) {
+            left: -35px;
+            width: 24px;
+            height: 24px;
+        }
+        @media screen and (min-width: 1360px) {
+            top: 15px;
+            left: -45px;
+            width: 30px;
+            height: 29px;
+        }
+    }
+}
+
+.phone-number {
+    @media screen and (min-width: 767px) {
+        margin-left: 237px;
+        font-size: 20px;
+        padding: 10px 24px 10px 0;
+        border-right: 1px solid #b9b9b9;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 1360px) {
+        margin-left: 290px;
+        font-size: 30px;
+    }
+}
+.instagramm-icon {
+    width: 40px;
+    height: 40px;
+    @media screen and (min-width: 767px) {
+        margin-left: 24px;
+    }
+}
+.section__copyright {
+    background-color: $bcg-secondary-color;
+}
+.footer__copyright {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    color: $secondary-text-color;
+}
+.copyright {
+    padding: 21px 51px;
+    text-align: center;
+    @media screen and (min-width: 767px) {
+        text-align: left;
+    }
+    @media screen and (min-width: 1360px) {
+        padding: 21px 0 21px 103px;
+    }
+}

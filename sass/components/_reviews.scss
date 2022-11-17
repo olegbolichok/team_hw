@@ -1,0 +1,192 @@
+.section__reviews {
+    background-color: $bcg-primary-color;
+}
+.reviews {
+    padding: 50px 20px;
+    @media screen and (min-width: 768px) {
+        padding: 0 20px 50px 20px;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 0 23px 130px 23px;
+    }
+}
+.reviews__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+    }
+    @media screen and (min-width: 1360px) {
+        font-size: 46px;
+        margin-bottom: 50px;
+    }
+}
+.reviews__card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 20px 30px 20px;
+    margin-bottom: 20px;
+
+    max-width: 480px;
+    background-color: $bcg-white-color;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        flex-direction: row;
+    }
+    @media screen and (min-width: 1360px) {
+        max-width: 1090px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        padding: 50px 112px 50px 82px;
+    }
+    .reviews__card--left {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            margin: 20px 46px 0 20px;
+        }
+    }
+    .reviews__card--right {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            margin: 20px 20px 0 0;
+            text-align: left;
+        }
+    }
+}
+.reviews__foto--main {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90px;
+    border-radius: 50%;
+    @media screen and (min-width: 768px) {
+        width: 150px;
+    }
+}
+.reviews__name {
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+    color: $accent-color;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1360px) {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+.reviews__vk-link {
+    margin-bottom: 27px;
+    margin-top: 27px;
+}
+.reviews__description {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    color: $secondary-text-color;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1360px) {
+        font-size: 14px;
+    }
+}
+.reviews__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: $guarntee-text-color;
+    @media screen and (min-width: 1360px) {
+        font-size: 18px;
+        line-height: 1.56;
+    }
+}
+.reviews__learn-more {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: center;
+    color: $accent-color;
+    text-decoration: underline;
+    @media screen and (min-width: 1360px) {
+        font-size: 18px;
+        line-height: 1.56;
+    }
+}
+.reviews__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.reviews__list {
+    display: flex;
+
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.reviews__item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+    .reviews__foto--secondary {
+        width: 54px;
+        border-radius: 50%;
+    }
+    &:nth-child(n + 3) {
+        @media screen and (max-width: 767px) {
+            margin-right: 0;
+        }
+    }
+}
+.reviews__item:nth-child(n + 4) {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.button__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    @media screen and (min-width: 768px) {
+        position: absolute;
+    }
+}
+.button__slider--left {
+    top: -200px;
+    left: -20px;
+    @media screen and (min-width: 1360px) {
+        top: -275px;
+        left: -5px;
+    }
+}
+.button__slider--right {
+    top: -200px;
+    right: -20px;
+    @media screen and (min-width: 1360px) {
+        top: -275px;
+        right: -5px;
+    }
+}

@@ -1,0 +1,32 @@
+.burger__open,
+.burger__close {
+    border: none;
+    background: none;
+}
+.button {
+    max-width: 260px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 14px 8px;
+}
+.button__consult,
+.button__desktop {
+    background: none;
+    color: $accent-color;
+    border: 2px solid $accent-color;
+}
+.button--orange {
+    background-color: $accent-color;
+    color: $bcg-white-color;
+    border: none;
+    @media screen and(min-width:1360px) {
+        max-width: 356px;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.14em;
+        padding: 26px;
+    }
+}

@@ -1,0 +1,40 @@
+.logo {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.logo--black,
+.logo--white {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.fire__icon {
+    margin: 0 4px;
+}
+.logo__first {
+    display: flex;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: $primary-text-color;
+}
+.logo__second {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $primary-text-color;
+}
+.logo__hell {
+    color: $accent-color;
+}
+.logo__first--white,
+.logo__second--white,
+.logo__hell--white {
+    color: $bcg-white-color;
+}

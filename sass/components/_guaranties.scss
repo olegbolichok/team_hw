@@ -1,0 +1,74 @@
+.section__guaranties {
+    background-image: linear-gradient(
+        to bottom,
+        $bcg-primary-color 14%,
+        $bcg-guarantee-color 14%
+    );
+    @media screen and(min-width:768px) {
+        background-image: none;
+        background-color: $bcg-primary-color;
+    }
+}
+.guaranties {
+    padding: 0 20px 31px 20px;
+    @media screen and(min-width:768px) {
+        padding: 0 20px 50px 20px;
+    }
+    @media screen and(min-width:1360px) {
+        padding: 0 23px 130px 23px;
+    }
+}
+.guaranties__card {
+    @media screen and(min-width:768px) {
+        background-color: $bcg-guarantee-color;
+        padding: 30px 50px 30px 80px;
+    }
+    @media screen and(min-width:768px) {
+        padding: 50px 112px 45px 112px;
+    }
+}
+.guaranties__list {
+    margin-left: 7px;
+}
+.guaranties__title {
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    @media screen and(min-width:1360px) {
+        font-size: 46px;
+    }
+}
+.guaranties__item {
+    position: relative;
+
+    padding-left: 28px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: $guarntee-text-color;
+
+    &:not(:last-child) {
+        padding-bottom: 23px;
+        border-left: 1px dashed $secondary-text-color;
+    }
+    &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -7px;
+
+        background-image: url(../../images/fire.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 14.5px;
+        height: 20px;
+    }
+    @media screen and(min-width:1360px) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
